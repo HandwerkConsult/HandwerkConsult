@@ -1,0 +1,156 @@
+index.html
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HandwerkConsult – Digitale Lösungen für Handwerksbetriebe</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Inter', sans-serif;
+}
+
+body {
+background: #f8fafc;
+color: #0f172a;
+}
+
+header {
+background: white;
+padding: 20px 40px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+position: fixed;
+width: 100%;
+top: 0;
+}
+
+.logo {
+font-weight: 700;
+font-size: 22px;
+color: #1e3a8a;
+}
+
+.hero {
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+background: linear-gradient(135deg, #1e3a8a, #2563eb);
+color: white;
+padding: 20px;
+}
+
+.hero-content h1 {
+font-size: 48px;
+margin-bottom: 20px;
+}
+
+.hero-content p {
+font-size: 20px;
+margin-bottom: 30px;
+}
+
+.button {
+background: white;
+color: #1e3a8a;
+padding: 15px 30px;
+border-radius: 8px;
+text-decoration: none;
+font-weight: 600;
+transition: 0.3s;
+}
+
+.button:hover {
+background: #e2e8f0;
+}
+
+.section {
+padding: 100px 40px;
+text-align: center;
+}
+
+.section h2 {
+font-size: 32px;
+margin-bottom: 20px;
+}
+
+.cards {
+display: flex;
+justify-content: center;
+gap: 20px;
+flex-wrap: wrap;
+margin-top: 40px;
+}
+
+.card {
+background: white;
+padding: 30px;
+border-radius: 12px;
+box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+width: 300px;
+}
+
+footer {
+background: #0f172a;
+color: white;
+padding: 40px;
+text-align: center;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">HandwerkConsult</div>
+</header>
+
+<section class="hero">
+<div class="hero-content">
+<h1>Digitale Lösungen für Handwerksbetriebe</h1>
+<p>Professionelle Websites, Google Optimierung und mehr Kunden für Ihr Unternehmen.</p>
+<a href="#" class="button">Kostenlose Analyse</a>
+</div>
+</section>
+
+<section class="section">
+<h2>Unsere Leistungen</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Professionelle Websites</h3>
+<p>Moderne und mobil optimierte Websites für Handwerksbetriebe.</p>
+</div>
+
+<div class="card">
+<h3>Google Optimierung</h3>
+<p>Mehr Sichtbarkeit und mehr Kunden über Google.</p>
+</div>
+
+<div class="card">
+<h3>Digitale Beratung</h3>
+<p>Strategien für nachhaltiges Wachstum.</p>
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 HandwerkConsult – Alle Rechte vorbehalten
+</footer>
+
+</body>
+</html>
