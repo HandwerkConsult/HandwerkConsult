@@ -1,4 +1,4 @@
-html
+html id=''handwerkconsult-html''
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -7,7 +7,7 @@ html
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-* { margin:0; padding:0; box-sizing:border-box; font-family: Arial,sans-serif; }
+* { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif; }
 body { background:#fff; color:#111; line-height:1.6; }
 
 /* Header */
@@ -15,14 +15,26 @@ header { position: fixed; width:100%; padding:20px 40px; background: rgba(255,25
 header .logo img { height:50px; }
 nav a { margin-left:30px; text-decoration:none; color:#1a1a1a; }
 
-/* Hero */
-.hero { height:100vh; background-image: url('https://images.unsplash.com/photo-1581092795368-28f8321e77d3?fit=crop&w=1920&q=80'); background-size:cover; background-position:center; display:flex; justify-content:center; align-items:center; text-align:center; color:white; padding:40px; }
+/* Hero Header */
+.hero {
+  height:100vh;
+  background-image: url('images/handwerkconsultheader.png');
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+  padding:40px;
+}
 .hero h1 { font-size:3rem; margin-bottom:20px; text-shadow:2px 2px 8px rgba(0,0,0,0.5);}
 .hero p { font-size:1.4rem; margin-bottom:30px; text-shadow:1px 1px 6px rgba(0,0,0,0.5);}
 .hero .btn { background:#2563eb; color:white; padding:15px 30px; font-size:18px; text-decoration:none; border-radius:8px; transition:0.3s;}
 .hero .btn:hover { background:#1e40af; }
 
-/* Services */
+/* Sections */
 .section { padding:100px 40px; text-align:center; }
 .service-cards { display:flex; flex-wrap:wrap; justify-content:center; gap:30px; margin-top:40px; }
 .service-card { background:#fafafa; padding:30px; border-radius:12px; width:280px; box-shadow:0px 4px 12px rgba(0,0,0,0.1);}
@@ -40,7 +52,7 @@ footer { background:#111; color:white; padding:40px; text-align:center; margin-t
 
 <header>
   <div class="logo">
-    <img src="https://images.unsplash.com/photo-1603880104529-b0d03a93f7b5?fit=crop&w=100&q=80" alt="HandwerkConsult Logo">
+    <img src="images/logo.png" alt="HandwerkConsult Logo">
   </div>
   <nav>
     <a href="#services">Leistungen</a>
@@ -61,17 +73,17 @@ footer { background:#111; color:white; padding:40px; text-align:center; margin-t
   <h2>Unsere Leistungen</h2>
   <div class="service-cards">
     <div class="service-card">
-      <img src="https://images.unsplash.com/photo-1593642532973-d31b6557fa68?fit=crop&w=80&q=80" alt="Web-Design Icon">
+      <img src="images/service1.png" alt="Web-Design Icon">
       <h3>Webdesign & Websites</h3>
       <p>Modern, mobiloptimiert und conversion-orientiert.</p>
     </div>
     <div class="service-card">
-      <img src="https://images.unsplash.com/photo-1581091012184-0f3b7ff548c0?fit=crop&w=80&q=80" alt="SEO Icon">
+      <img src="images/service2.png" alt="SEO Icon">
       <h3>SEO & Sichtbarkeit</h3>
       <p>Mehr Sichtbarkeit bei Google & mehr Kundenanfragen.</p>
     </div>
     <div class="service-card">
-      <img src="https://images.unsplash.com/photo-1522202221206-12d4d8d5e3c2?fit=crop&w=80&q=80" alt="Consulting Icon">
+      <img src="images/service3.png" alt="Consulting Icon">
       <h3>Beratung & Strategie</h3>
       <p>Strategische Beratung für nachhaltiges Wachstum.</p>
     </div>
@@ -81,9 +93,9 @@ footer { background:#111; color:white; padding:40px; text-align:center; margin-t
 <section id="portfolio" class="section">
   <h2>Beispiele & Inspiration</h2>
   <div class="portfolio">
-    <img src="https://images.unsplash.com/photo-1593642634367-d91a135587b5?fit=crop&w=400&q=80" alt="Projekt Beispiel 1">
-    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?fit=crop&w=400&q=80" alt="Projekt Beispiel 2">
-    <img src="https://images.unsplash.com/photo-1522202221206-12d4d8d5e3c2?fit=crop&w=400&q=80" alt="Projekt Beispiel 3">
+    <img src="images/portfolio1.png" alt="Projekt Beispiel 1">
+    <img src="images/portfolio2.png" alt="Projekt Beispiel 2">
+    <img src="images/portfolio3.png" alt="Projekt Beispiel 3">
   </div>
 </section>
 
@@ -95,6 +107,9 @@ footer { background:#111; color:white; padding:40px; text-align:center; margin-t
 <footer>
   © 2026 HandwerkConsult
 </footer>
+
+</body>
+</html>
 
 </body>
 </html>
