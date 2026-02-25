@@ -3,154 +3,196 @@ html
 <html lang="de">
 <head>
 <meta charset="UTF-8">
+<title>HandwerkConsult – Digitale Agentur für Handwerk</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HandwerkConsult – Digitale Lösungen für Handwerksbetriebe</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 body {
-background: #f8fafc;
-color: #0f172a;
+  background: #fff;
+  color: #111;
+  line-height: 1.6;
 }
 
+/* Header + Hero */
 header {
-background: white;
-padding: 20px 40px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-position: fixed;
-width: 100%;
-top: 0;
+  position: fixed;
+  width: 100%;
+  padding: 20px 40px;
+  background: rgba(255,255,255,0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
 }
 
-.logo {
-font-weight: 700;
-font-size: 22px;
-color: #1e3a8a;
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+nav a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #1a1a1a;
 }
 
 .hero {
-height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
-text-align: center;
-background: linear-gradient(135deg, #1e3a8a, #2563eb);
-color: white;
-padding: 20px;
+  height: 100vh;
+  background-image: url("https://via.placeholder.com/1920x1080");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 40px;
 }
 
-.hero-content h1 {
-font-size: 48px;
-margin-bottom: 20px;
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
 
-.hero-content p {
-font-size: 20px;
-margin-bottom: 30px;
+.hero p {
+  font-size: 1.4rem;
+  margin-bottom: 30px;
 }
 
-.button {
-background: white;
-color: #1e3a8a;
-padding: 15px 30px;
-border-radius: 8px;
-text-decoration: none;
-font-weight: 600;
-transition: 0.3s;
+.hero .btn {
+  background: #2563eb;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
 }
 
-.button:hover {
-background: #e2e8f0;
+.hero .btn:hover {
+  background: #1e40af;
 }
 
+/* Services */
 .section {
-padding: 100px 40px;
-text-align: center;
+  padding: 100px 40px;
+  text-align: center;
 }
 
-.section h2 {
-font-size: 32px;
-margin-bottom: 20px;
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
 }
 
-.cards {
-display: flex;
-justify-content: center;
-gap: 20px;
-flex-wrap: wrap;
-margin-top: 40px;
+.service-card {
+  background: #fafafa;
+  padding: 30px;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
 }
 
-.card {
-background: white;
-padding: 30px;
-border-radius: 12px;
-box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-width: 300px;
+.service-card img {
+  width: 80px;
+  margin-bottom: 15px;
 }
 
+/* Portfolio */
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.portfolio img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Footer */
 footer {
-background: #0f172a;
-color: white;
-padding: 40px;
-text-align: center;
+  background: #111;
+  color: white;
+  padding: 40px;
+  text-align: center;
+  margin-top: 80px;
 }
-
 </style>
 </head>
 
 <body>
 
 <header>
-<div class="logo">HandwerkConsult</div>
+  <div class="logo">HandwerkConsult</div>
+  <nav>
+    <a href="#services">Leistungen</a>
+    <a href="#portfolio">Beispiele</a>
+    <a href="#contact">Kontakt</a>
+  </nav>
 </header>
 
 <section class="hero">
-<div class="hero-content">
-<h1>Digitale Lösungen für Handwerksbetriebe</h1>
-<p>Professionelle Websites, Google Optimierung und mehr Kunden für Ihr Unternehmen.</p>
-<a href="#" class="button">Kostenlose Analyse</a>
-</div>
+  <div>
+    <h1>Moderne digitale Lösungen für Handwerksbetriebe</h1>
+    <p>Professionelles Webdesign, Local SEO & Google Business Optimierung</p>
+    <a href="#contact" class="btn">Jetzt Analyse anfordern</a>
+  </div>
 </section>
 
-<section class="section">
-<h2>Unsere Leistungen</h2>
+<section id="services" class="section">
+  <h2>Unsere Leistungen</h2>
+  <div class="service-cards">
+    <div class="service-card">
+      <img src="https://via.placeholder.com/80" alt="Web-Design Icon">
+      <h3>Webdesign & Websites</h3>
+      <p>Modern, mobiloptimiert und conversion‑orientiert.</p>
+    </div>
+    <div class="service-card">
+      <img src="https://via.placeholder.com/80" alt="SEO Icon">
+      <h3>SEO & Sichtbarkeit</h3>
+      <p>Mehr Sichtbarkeit bei Google & mehr Kundenanfragen.</p>
+    </div>
+    <div class="service-card">
+      <img src="https://via.placeholder.com/80" alt="Consulting Icon">
+      <h3>Beratung & Strategie</h3>
+      <p>Strategische Beratung für nachhaltiges Wachstum.</p>
+    </div>
+  </div>
+</section>
 
-<div class="cards">
+<section id="portfolio" class="section">
+  <h2>Beispiele & Inspiration</h2>
+  <div class="portfolio">
+    <img src="https://via.placeholder.com/400x300" alt="Projekt Beispiel 1">
+    <img src="https://via.placeholder.com/400x300" alt="Projekt Beispiel 2">
+    <img src="https://via.placeholder.com/400x300" alt="Projekt Beispiel 3">
+  </div>
+</section>
 
-<div class="card">
-<h3>Professionelle Websites</h3>
-<p>Moderne und mobil optimierte Websites für Handwerksbetriebe.</p>
-</div>
-
-<div class="card">
-<h3>Google Optimierung</h3>
-<p>Mehr Sichtbarkeit und mehr Kunden über Google.</p>
-</div>
-
-<div class="card">
-<h3>Digitale Beratung</h3>
-<p>Strategien für nachhaltiges Wachstum.</p>
-</div>
-
-</div>
+<section id="contact" class="section">
+  <h2>Kontakt</h2>
+  <p>kontakt@handwerkconsult.de | +49 731  [oai_citation:1‡Website erstellen lassen | Tailorsites](https://tailorsites.de/beste-webdesign-agentur-in-deutschland-beste-website-ranking/?utm_source=chatgpt.com)
 </section>
 
 <footer>
-© 2026 HandwerkConsult – Alle Rechte vorbehalten
+  © 2026 HandwerkConsult
 </footer>
+
+</body>
+</html>
 
 </body>
 </html>
